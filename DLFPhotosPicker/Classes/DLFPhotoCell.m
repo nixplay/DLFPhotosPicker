@@ -7,7 +7,7 @@
 //
 
 #import "DLFPhotoCell.h"
-
+#define LIGHT_BLUE_CGCOLOR [[UIColor colorWithRed:(99/255.0f)  green:(176/255.0f)  blue:(228.0f/255.0f) alpha:1.0] CGColor]
 @interface DLFPhotoCell ()
 
 @property (nonatomic, weak) UIView *highlightedView;
@@ -40,7 +40,7 @@
         UIView *view = [[UIView alloc] initWithFrame:self.imageView.frame];
         [view setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.5]];
         [view setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-        [view.layer setBorderColor:[[UIColor colorWithRed:(99/255.0f)  green:(176/255.0f)  blue:(228.0f/255.0f) alpha:1.0] CGColor];
+        [view.layer setBorderColor:LIGHT_BLUE_CGCOLOR];
         [view.layer setBorderWidth:5];
         view.hidden = YES;
         [self.contentView addSubview:view];
