@@ -8,7 +8,7 @@
 
 @import UIKit;
 @import Photos;
-
+#define LIGHT_BLUE_COLOR [UIColor colorWithRed:(99/255.0f)  green:(176/255.0f)  blue:(228.0f/255.0f) alpha:1.0]
 @interface DLFPhotosSelectionView : UIView
 
 @property (nonatomic, strong, readonly) UIButton *clearSelectionButton;
