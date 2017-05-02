@@ -130,7 +130,7 @@
         self.clearSelectionButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.clearSelectionButton setTitle:NSLocalizedString(@"Clear", nil) forState:UIControlStateNormal];
         [self.clearSelectionButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
-        [self.clearSelectionButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [self.clearSelectionButton setTitleColor:LIGHT_BLUE_COLOR forState:UIControlStateNormal];
         [self.clearSelectionButton setBackgroundColor:[UIColor clearColor]];
         [self.clearSelectionButton sizeToFit];
         [self addSubview:self.clearSelectionButton];
